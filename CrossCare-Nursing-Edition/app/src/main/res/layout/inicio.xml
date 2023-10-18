@@ -6,23 +6,26 @@
     android:orientation="vertical"
     android:background="#F1EEEE">
 
-    <ImageView
-        android:id="@+id/logo_feliz"
-        android:layout_width="473dp"
-        android:layout_height="471dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="-33dp"
-        android:layout_marginTop="-20dp"
-        app:srcCompat="@drawable/logo_feliz_2_1" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/logo_feliz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            app:srcCompat="@drawable/logo_feliz_2_1" />
+    </LinearLayout>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/rectangle_1"
         android:layout_width="match_parent"
-        android:layout_height="446dp"
+        android:layout_height="match_parent"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="-115dp"
         app:cardBackgroundColor="#700606"
         app:cardCornerRadius="25dp">
 
@@ -32,10 +35,9 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_marginLeft="68dp"
-            android:layout_marginTop="15dp"
+            android:textAlignment="center"
             android:fontFamily="@font/abeezee"
-            android:gravity="top"
+            android:gravity="center_horizontal"
             android:text="CrossCare"
             android:textColor="#FFFFFF"
             android:textSize="60dp"
@@ -46,23 +48,22 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
-            android:layout_marginLeft="122dp"
             android:layout_alignParentTop="true"
             android:layout_marginTop="80dp"
             android:text="Nursing Edition"
-            android:gravity="top"
+            android:gravity="center_horizontal"
             android:textColor="#FFFFFF"
             android:textSize="25dp"
             />
 
         <Button
             android:id="@+id/btnCadastrar"
-            android:layout_width="288dp"
-            android:layout_height="63dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_marginLeft="63dp"
             android:layout_marginTop="150dp"
+            android:layout_gravity="center_horizontal"
             android:backgroundTint="#000000"
             android:fontFamily="@font/abeezee"
             android:onClick="cadastro"
@@ -72,12 +73,12 @@
 
         <Button
             android:id="@+id/btnLogin"
-            android:layout_width="288dp"
-            android:layout_height="63dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_marginLeft="63dp"
             android:layout_marginTop="230dp"
+            android:layout_gravity="center_horizontal"
             android:backgroundTint="#FFFFFF"
             android:fontFamily="@font/abeezee"
             android:onClick="login"

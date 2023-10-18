@@ -6,56 +6,63 @@
     android:orientation="vertical"
     android:background="#F1EEEE">
 
-    <ImageView
-        android:id="@+id/logo_muito_feliz"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="0dp"
-        android:layout_marginTop="-50dp"
-        android:translationZ="999dp"
-        app:srcCompat="@drawable/logo_feliz__1_" />
+        android:orientation="vertical">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/rectangle_2"
-        android:layout_width="414dp"
-        android:layout_height="417dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="-710dp"
-        app:cardBackgroundColor="#700606"
-        app:cardCornerRadius="500dp">
-
-        <TextView
-            android:id="@+id/login"
+        <androidx.cardview.widget.CardView
+            android:id="@+id/rectangle_2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="480dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_marginLeft="153dp"
-            android:layout_marginTop="215dp"
-            android:fontFamily="@font/abeezee"
-            android:gravity="top"
-            android:text="Login"
-            android:textColor="#FFFFFF"
-            android:textSize="40dp"
-            android:textStyle="bold"/>
+            android:layout_marginTop="-270dp"
+            app:cardBackgroundColor="#700606"
+            app:cardCornerRadius="500dp">
 
-        <TextView
-            android:id="@+id/feliz_em_v"
-            android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="153dp"
+                android:layout_marginTop="280dp"
+                android:fontFamily="@font/abeezee"
+                android:gravity="top"
+                android:text="Login"
+                android:textColor="#FFFFFF"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/feliz_em_v"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="138dp"
+                android:layout_marginTop="330dp"
+                android:fontFamily="@font/abeezee"
+                android:gravity="top"
+                android:text="Feliz em vê-lo"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp" />
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id="@+id/logo_muito_feliz"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_marginLeft="138dp"
-            android:layout_marginTop="265dp"
-            android:fontFamily="@font/abeezee"
-            android:gravity="top"
-            android:text="Feliz em vê-lo"
-            android:textColor="#FFFFFF"
-            android:textSize="20dp" />
-    </androidx.cardview.widget.CardView>
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="-110dp"
+            android:translationZ="999dp"
+            app:srcCompat="@drawable/logo_feliz__1_" />
+    </LinearLayout>
 
     <TextView
         android:id="@+id/tvEmail"
@@ -65,7 +72,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginLeft="57dp"
         android:layout_marginRight="57dp"
-        android:layout_marginTop="130dp"
+        android:layout_marginTop="50dp"
         android:fontFamily="@font/abeezee"
         android:gravity="top"
         android:text="EMAIL:"
