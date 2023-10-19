@@ -17,6 +17,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
             app:srcCompat="@drawable/logo_feliz_2_1" />
     </LinearLayout>
 
@@ -27,7 +28,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         app:cardBackgroundColor="#700606"
-        app:cardCornerRadius="25dp">
+        android:layout_marginTop="-20dp">
 
         <TextView
             android:id="@+id/crosscare"
@@ -35,13 +36,14 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:textAlignment="center"
             android:fontFamily="@font/abeezee"
             android:gravity="center_horizontal"
             android:text="CrossCare"
+            android:layout_marginTop="40dp"
+            android:textAlignment="center"
             android:textColor="#FFFFFF"
-            android:textSize="60dp"
-            />
+            android:textStyle="bold"
+            android:textSize="60dp" />
 
         <TextView
             android:id="@+id/nursing_edi"
@@ -49,7 +51,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="80dp"
+            android:layout_marginTop="102dp"
             android:text="Nursing Edition"
             android:gravity="center_horizontal"
             android:textColor="#FFFFFF"
@@ -58,11 +60,11 @@
 
         <Button
             android:id="@+id/btnCadastrar"
-            android:layout_width="250dp"
+            android:layout_width="260dp"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="150dp"
+            android:layout_marginTop="190dp"
             android:layout_gravity="center_horizontal"
             android:backgroundTint="#000000"
             android:fontFamily="@font/abeezee"
@@ -73,11 +75,11 @@
 
         <Button
             android:id="@+id/btnLogin"
-            android:layout_width="250dp"
+            android:layout_width="260dp"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="230dp"
+            android:layout_marginTop="260dp"
             android:layout_gravity="center_horizontal"
             android:backgroundTint="#FFFFFF"
             android:fontFamily="@font/abeezee"

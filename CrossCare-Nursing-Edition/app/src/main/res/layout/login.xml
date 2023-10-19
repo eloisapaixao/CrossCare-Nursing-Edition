@@ -38,7 +38,7 @@
 
             <TextView
                 android:id="@+id/feliz_em_v"
-                android:layout_width="match_parent"
+                android:layout_width="279dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
@@ -46,7 +46,7 @@
                 android:layout_marginTop="330dp"
                 android:fontFamily="@font/abeezee"
                 android:gravity="top"
-                android:text="Feliz em vê-lo"
+                android:text="Feliz em vê-lo!"
                 android:textColor="#FFFFFF"
                 android:textSize="20dp" />
         </androidx.cardview.widget.CardView>

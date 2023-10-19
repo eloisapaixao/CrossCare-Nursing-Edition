@@ -19,17 +19,18 @@
         app:srcCompat="@drawable/logo_feliz_2_1" />
 
     <TextView
-        android:id="@+id/crosscare"
+        android:id="@+id/crosscare_carregamento"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginLeft="100dp"
         android:layout_marginRight="60dp"
-        android:layout_marginTop="-95dp"
+        android:layout_marginTop="-60dp"
         android:fontFamily="@font/abeezee"
         android:gravity="top"
         android:text="CrossCare"
+        android:textStyle="bold"
         android:textColor="#3A0000"
         android:textSize="45dp" />
 
