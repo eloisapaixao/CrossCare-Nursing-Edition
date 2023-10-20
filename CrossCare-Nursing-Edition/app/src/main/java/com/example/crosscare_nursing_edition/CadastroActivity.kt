@@ -2,21 +2,18 @@ package com.example.crosscare_nursing_edition
 
 import android.content.Intent
 import android.os.Bundle
-import android.os.Handler
-import android.os.Looper
-import android.view.View
 import android.view.WindowManager
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.firestore.ktx.firestore
-import com.google.firebase.ktx.Firebase
+import com.android.volley.Request
+import com.android.volley.RequestQueue
+import com.android.volley.Response
+import com.android.volley.toolbox.JsonObjectRequest
+
 
 class CadastroActivity : AppCompatActivity() {
-    val db = Firebase.firestore
-
     lateinit var btnEntrar: Button
     lateinit var edtNome: EditText
     lateinit var edtSenha: EditText
@@ -38,17 +35,23 @@ class CadastroActivity : AppCompatActivity() {
 
         this.btnEntrar.setOnClickListener (){
             try{
-                val createUserData = hashMapOf(
-                    "nome" to this.edtNome.text.toString(),
-                    "senha" to  this.edtSenha.text.toString()
+                val url = "http://192.168.107.46:3000/cadastro"
+
+                val queue: RequestQueue = MyVolley.getRequestQueue()
+                
+                val jsonObjectRequest = JsonObjectRequest(
+                    Request.Method.GET, url, null,
+                    Response.Listener { response ->
+                        val intent = Intent(this, JogoActivity::class.java)
+                        startActivity(intent)
+                    },
+                    Response.ErrorListener { error ->
+                        // TODO: Handle error
+                    }
                 )
 
-                db.collection("Usuario")
-                    .add(createUserData)
-                    .addOnSuccessListener { documentReference ->
-                        // O documento foi adicionado com sucesso, e documentReference contém o ID gerado automaticamente.
-                        val novoDocumentoId = documentReference.id
-                    }
+                // Access the RequestQueue through your singleton class.
+                MySingleton.getInstance(this).addToRequestQueue(jsonObjectRequest)
             }
             catch (e: Exception){
                 val mensagem = "Você clicou no botão!"
