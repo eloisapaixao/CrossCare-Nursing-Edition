@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "659114285712",
+    "project_id": "crosscareapi",
+    "storage_bucket": "crosscareapi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:659114285712:android:f11cb9c57061bd89555615",
+        "android_client_info": {
+          "package_name": "com.example.crosscare_nursing_edition"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHmlaIKIVcnkomifYHiH9x6M-sJmpOfUA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
