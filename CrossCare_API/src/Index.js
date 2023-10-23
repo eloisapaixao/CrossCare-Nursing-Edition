@@ -42,12 +42,12 @@ app.post("/usuarios", async (req, res) => {
         const querySnapshot = await getDocs(q);
 
         if (!querySnapshot.empty) {
-            res.send("Usuário autenticado!");
+            res.send({message: "Usuário autenticado!"});
         } else {
-            res.send("Usuário não autenticado");
+            res.send({message: "Usuário não autenticado"});
         }
     } catch (error) {
-        console.error("Erro ao buscar usuários:", error);
+        console.error({message:"Erro ao buscar usuários:", error});
         res.status(500).json({ error: "Erro ao buscar usuários" });
     }
 });

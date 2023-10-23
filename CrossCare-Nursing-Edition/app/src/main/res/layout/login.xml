@@ -81,7 +81,7 @@
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/etEmail"
+        android:id="@+id/etEmail2"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_alignParentLeft="true"
@@ -110,7 +110,7 @@
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/etSenha"
+        android:id="@+id/etSenha2"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_alignParentLeft="true"
@@ -123,7 +123,7 @@
         android:background="#D3D3D3" />
 
     <Button
-        android:id="@+id/btnEntrar"
+        android:id="@+id/btnEntrar2"
         android:layout_width="match_parent"
         android:layout_height="63dp"
         android:layout_alignParentLeft="true"
