@@ -8,7 +8,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layoutDescription="@xml/carrossel"
-    tools:context=".JogoActivity">
+    tools:context=".JogoActivity"
+    android:background="#700606">
 
     <View
         android:id="@+id/guide"
@@ -26,7 +27,16 @@
         app:cardBackgroundColor="@color/purple_200"
         app:layout_constraintCircle="@+id/guide"
         app:layout_constraintCircleAngle="0"
-        app:layout_constraintCircleRadius="190dp" />
+        app:layout_constraintCircleRadius="190dp"
+        android:backgroundTint="#F1EEEE">
+
+        <Button
+            android:id="@+id/btn_comecar1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Começar - FASE 1"
+            android:backgroundTint="#B22222" />
+    </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cardRight1"
@@ -36,7 +46,16 @@
         app:cardBackgroundColor="@color/purple_500"
         app:layout_constraintCircle="@+id/guide"
         app:layout_constraintCircleAngle="0"
-        app:layout_constraintCircleRadius="190dp" />
+        app:layout_constraintCircleRadius="190dp"
+        android:backgroundTint="#F1EEEE" >
+
+        <Button
+            android:id="@+id/btn_comecar2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Começar - FASE 2"
+            android:backgroundTint="#B22222" />
+    </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cardLeft1"
@@ -46,6 +65,57 @@
         app:cardBackgroundColor="@color/teal_200"
         app:layout_constraintCircle="@+id/guide"
         app:layout_constraintCircleAngle="0"
-        app:layout_constraintCircleRadius="190dp" />
+        app:layout_constraintCircleRadius="190dp"
+        android:backgroundTint="#F1EEEE">
+
+        <Button
+            android:id="@+id/btn_comecar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Começar - FASE 3"
+            android:backgroundTint="#B22222" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logo_feliz__1_"
+        tools:layout_editor_absoluteX="139dp"
+        tools:layout_editor_absoluteY="20dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/abeezee"
+        android:text="CrossCare"
+        android:textColor="#F1EEEE"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="91dp"
+        tools:layout_editor_absoluteY="33dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/abeezee"
+        android:text="Nursing Edition"
+        android:textColor="#F1EEEE"
+        android:textSize="23dp"
+        tools:layout_editor_absoluteX="204dp"
+        tools:layout_editor_absoluteY="91dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/abeezee"
+        android:text="Termine todas as fases para completar o jogo! Boa sorte!"
+        android:textColor="#F1EEEE"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="64dp"
+        tools:layout_editor_absoluteY="655dp" />
 
 </androidx.constraintlayout.motion.widget.MotionLayout>
