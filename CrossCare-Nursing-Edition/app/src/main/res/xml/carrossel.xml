@@ -50,9 +50,8 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toTopOf="@+id/cardCenter"
-            app:layout_constraintVertical_bias="0.695"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_editor_absoluteY="155dp" />
+            app:layout_constraintVertical_bias="0.548"
+            app:layout_constraintHorizontal_bias="0.498" />
         <Constraint
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -84,8 +83,23 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/cardCenter"
-            app:layout_constraintVertical_bias="1.0"
-            app:layout_constraintHorizontal_bias="0.496" />
+            app:layout_constraintVertical_bias="0.991"
+            app:layout_constraintHorizontal_bias="0.124" />
+        <Constraint
+            app:layout_editor_absoluteY="680dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/textView6" />
+        <Constraint
+            app:layout_editor_absoluteX="176dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/textView7" />
+        <Constraint
+            app:layout_constraintTop_toBottomOf="parent"
+            android:id="@+id/textView8" />
+        <Constraint
+            app:layout_editor_absoluteX="33dp"
+            app:layout_constraintTop_toBottomOf="@+id/cardCenter"
+            android:id="@+id/textView10" />
     </ConstraintSet>
 
     <ConstraintSet android:id="@+id/leftCard">

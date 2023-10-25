@@ -53,7 +53,7 @@
             android:id="@+id/btn_comecar2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Começar - FASE 2"
+            android:text="Começar - FASE 3"
             android:backgroundTint="#B22222" />
     </com.google.android.material.card.MaterialCardView>
 
@@ -72,7 +72,7 @@
             android:id="@+id/btn_comecar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Começar - FASE 3"
+            android:text="Começar - FASE 2"
             android:backgroundTint="#B22222" />
     </com.google.android.material.card.MaterialCardView>
 
@@ -106,16 +106,5 @@
         android:textSize="23dp"
         tools:layout_editor_absoluteX="204dp"
         tools:layout_editor_absoluteY="91dp" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/abeezee"
-        android:text="Termine todas as fases para completar o jogo! Boa sorte!"
-        android:textColor="#F1EEEE"
-        android:textSize="20dp"
-        tools:layout_editor_absoluteX="64dp"
-        tools:layout_editor_absoluteY="655dp" />
 
 </androidx.constraintlayout.motion.widget.MotionLayout>
