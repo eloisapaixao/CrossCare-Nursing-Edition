@@ -36,7 +36,7 @@ class LoginActivity : AppCompatActivity() {
 
         this.btnLogin.setOnClickListener(){
             try{
-                val url = "http://192.168.245.46:3000/usuarios"
+                val url = "http://192.168.5.46:3000/usuarios"
                 val requestQueue = Volley.newRequestQueue(this)
                 val jsonObject = JSONObject()
                 jsonObject.put("email", edtEmail.text.toString())

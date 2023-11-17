@@ -73,16 +73,16 @@ async function pegarPalavras() {
 
     querySnapshot.forEach((doc) => {
         // Adiciona cada palavra aos palavras array
-        if (doc.data().tamanho == 7)
+        if (doc.data().tamanho == 5)
             palavras.push({ id: doc.id, palavra: doc.data().palavra, dica: doc.data().dica, categoria: doc.data().Categoria });
     });
 
     const palavrasEmbaralhadas = shuffleArray(palavras);
 
-    // Pega as primeiras 5 palavras
-    const cincoPalavras = palavrasEmbaralhadas.slice(0, 8);
+    // Pega as primeiras 7 palavras
+    const setePalavras = palavrasEmbaralhadas.slice(0, 7);
 
-    return cincoPalavras;
+    return setePalavras;
 }
 
 function shuffleArray(array) {

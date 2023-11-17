@@ -35,7 +35,7 @@ class CadastroActivity : AppCompatActivity() {
 
         this.btnEntrar.setOnClickListener(){
             try{
-                val url = "http://192.168.107.46:3000/cadastro"
+                val url = "http://192.168.5.46:3000/cadastro"
                 val requestQueue = Volley.newRequestQueue(this)
                 val jsonObject = JSONObject()
                 jsonObject.put("email", edtEmail.text.toString())
