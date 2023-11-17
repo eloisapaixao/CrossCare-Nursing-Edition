@@ -80,7 +80,7 @@ async function pegarPalavras() {
     const palavrasEmbaralhadas = shuffleArray(palavras);
 
     // Pega as primeiras 5 palavras
-    const cincoPalavras = palavrasEmbaralhadas.slice(0, 5);
+    const cincoPalavras = palavrasEmbaralhadas.slice(0, 8);
 
     return cincoPalavras;
 }
