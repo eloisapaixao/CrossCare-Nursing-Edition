@@ -25,8 +25,20 @@ class JogoActivity : AppCompatActivity() {
         getSupportActionBar()?.hide()
 
         var card1 = findViewById<CardView>(R.id.cardCenter)
+        var card2 = findViewById<CardView>(R.id.cardRight1)
+        var card3 = findViewById<CardView>(R.id.cardLeft1)
 
         card1.setOnClickListener({
+            val intent = Intent(this, FasesActivity::class.java)
+            startActivity(intent)
+        })
+
+        card2.setOnClickListener({
+            val intent = Intent(this, FasesActivity::class.java)
+            startActivity(intent)
+        })
+
+        card3.setOnClickListener({
             val intent = Intent(this, FasesActivity::class.java)
             startActivity(intent)
         })
