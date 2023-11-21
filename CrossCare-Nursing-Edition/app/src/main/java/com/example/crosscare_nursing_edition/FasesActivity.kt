@@ -11,7 +11,9 @@ import android.view.View.OnFocusChangeListener
 import android.view.ViewGroup
 import android.view.ViewTreeObserver.OnGlobalLayoutListener
 import android.view.WindowManager
+import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageButton
 import android.widget.RelativeLayout
 import android.widget.TextView
 import android.widget.Toast
@@ -118,6 +120,29 @@ class FasesActivity : AppCompatActivity(){
                     }
                 })
             }
+        }
+
+        var btnDireita = findViewById<ImageButton>(R.id.vaiDir)
+        var btnEsquerda = findViewById<ImageButton>(R.id.vaiEsq)
+
+        var linhaAtual = 1
+        var colunaAtual = 1
+
+        btnDireita.setOnClickListener {
+            if (colunaAtual < 5) {
+                colunaAtual++
+            } else {
+                linhaAtual++
+                colunaAtual = 1
+
+                if (linhaAtual > 7) {
+                    linhaAtual = 1
+                }
+            }
+
+            val sla = "q$linhaAtual$colunaAtual"
+
+            findViewById<EditText>(resources.getIdentifier(sla, "id", packageName)).requestFocus()
         }
     }
 
