@@ -35,7 +35,7 @@ class FasesActivity : AppCompatActivity(){
         var palavras = mutableListOf<JSONObject>()
 
         try{
-            val url = "http://192.168.5.46:3000/crossword"
+            val url = "http://192.168.116.46:3000/crossword"
             val requestQueue = Volley.newRequestQueue(this)
 
             val jsonArrayRequest = JsonArrayRequest(
@@ -129,15 +129,24 @@ class FasesActivity : AppCompatActivity(){
         var colunaAtual = 1
 
         btnDireita.setOnClickListener {
-            if (colunaAtual < 5) {
-                colunaAtual++
-            } else {
-                linhaAtual++
-                colunaAtual = 1
+            linhaAtual++
+            colunaAtual = 1
 
-                if (linhaAtual > 7) {
-                    linhaAtual = 1
-                }
+            if (linhaAtual == 7) {
+                linhaAtual = 1
+            }
+
+            val sla = "q$linhaAtual$colunaAtual"
+
+            findViewById<EditText>(resources.getIdentifier(sla, "id", packageName)).requestFocus()
+        }
+
+        btnEsquerda.setOnClickListener{
+            linhaAtual--
+            colunaAtual = 1
+
+            if (linhaAtual < 1) {
+                linhaAtual = 7
             }
 
             val sla = "q$linhaAtual$colunaAtual"
