@@ -35,7 +35,7 @@ class FasesActivity : AppCompatActivity(){
         var palavras = mutableListOf<JSONObject>()
 
         try{
-            val url = "http://192.168.116.46:3000/crossword"
+            val url = "http://192.168.56.1:3000/crossword"
             val requestQueue = Volley.newRequestQueue(this)
 
             val jsonArrayRequest = JsonArrayRequest(
