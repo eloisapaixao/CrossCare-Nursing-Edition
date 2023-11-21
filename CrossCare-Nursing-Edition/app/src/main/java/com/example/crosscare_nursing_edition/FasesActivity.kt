@@ -86,7 +86,7 @@ class FasesActivity : AppCompatActivity(){
                 val sla = "q"+i+""+j
                 findViewById<View>(resources.getIdentifier(sla, "id", packageName)).setOnFocusChangeListener(OnFocusChangeListener { v, hasFocus ->
                     if(hasFocus) {
-                        findViewById<TextView>(R.id.dica).text = palavras[i].getString("dica")
+                        findViewById<TextView>(R.id.dica).text = palavras[i-1].getString("dica")
                     }
                 })
                 findViewById<EditText>(resources.getIdentifier(sla, "id", packageName)).addTextChangedListener(object :
@@ -132,7 +132,7 @@ class FasesActivity : AppCompatActivity(){
             linhaAtual++
             colunaAtual = 1
 
-            if (linhaAtual == 7) {
+            if (linhaAtual > 7) {
                 linhaAtual = 1
             }
 
