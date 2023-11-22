@@ -34,8 +34,9 @@
             android:id="@+id/btn_comecar1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Começar - FASE 1"
-            android:backgroundTint="#B22222" />
+            android:backgroundTint="#B22222"
+            android:rotation="0"
+            android:text="Começar - FASE 1" />
     </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.card.MaterialCardView

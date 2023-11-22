@@ -44,7 +44,7 @@ app.post("/usuarios", async (req, res) => {
         if (!querySnapshot.empty) {
             res.send({ message: "Usuário autenticado!" });
         } else {
-            res.send({ message: "Usuário não autenticado" });
+            res.status(403).send({ message: "Usuário não autenticado" });
         }
     } catch (error) {
         console.error({ message: "Erro ao buscar usuários:", error });
